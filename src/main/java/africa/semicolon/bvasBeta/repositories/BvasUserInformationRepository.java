@@ -11,10 +11,6 @@ public class BvasUserInformationRepository implements UserInformationRepository{
     UserInformation userInformation;
     private List<UserInformation> userInformationList = new ArrayList<>();
 
-    public BvasUserInformationRepository(UserInformation userInformation) {
-        this.userInformation = userInformation;
-    }
-
     @Override
     public UserInformation save(UserInformation userInformation) {
         String id = AppUtils.generateId();

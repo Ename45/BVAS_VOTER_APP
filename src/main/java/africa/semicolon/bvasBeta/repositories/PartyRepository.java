@@ -11,9 +11,4 @@ public interface PartyRepository {
     Party findById(String id);
     List<Party> findAll();
     void deleteById(String id);
-//    Party findById(String id);
-//    List<Party> findAll();
-//    int countAdmin();
-//    void save(Party party);
-//    void deleteById(String id);
 }

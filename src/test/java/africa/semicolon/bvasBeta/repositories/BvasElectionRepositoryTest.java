@@ -13,8 +13,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class BvasElectionRepositoryTest {
 
     Election savedElection;
-    UserInformation userInformation = new UserInformation();
-    private final ElectionRepository electionRepository = new BvasElectionRepository(userInformation);
+    private final ElectionRepository electionRepository = new BvasElectionRepository();
 
     @BeforeEach
     public void setUp(){
@@ -27,12 +26,6 @@ class BvasElectionRepositoryTest {
         assertNotNull(savedElection);
         assertNotNull(savedElection.getElectionId());
     }
-
-//    private Election buildTestElection(){
-//        Election election = new Election();
-//        election.setUserInformation(userInformation);
-//        return election;
-//    }
 
     @Test
     public void testFindById(){

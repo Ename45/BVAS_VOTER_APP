@@ -1,21 +1,13 @@
 package africa.semicolon.bvasBeta.repositories;
 
 import africa.semicolon.bvasBeta.models.Election;
-import africa.semicolon.bvasBeta.models.UserInformation;
-import africa.semicolon.bvasBeta.models.Voter;
 import africa.semicolon.bvasBeta.utils.AppUtils;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class BvasElectionRepository implements ElectionRepository{
-
-    UserInformation userInformation;
     List<Election> electionList = new ArrayList<>();
-
-    public BvasElectionRepository(UserInformation userInformation) {
-        this.userInformation = userInformation;
-    }
 
     @Override
     public Election save(Election election) {

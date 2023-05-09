@@ -9,35 +9,57 @@ import java.util.List;
 
 public class BvasPartyRepository implements PartyRepository{
     List<Party> partyList = new ArrayList<>();
-    UserInformation userInformation;
 
-    public BvasPartyRepository(UserInformation userInformation) {
-        this.userInformation = userInformation;
-    }
-
-
+    private final UserInformationRepository userInformationRepository = new BvasUserInformationRepository();
 
     @Override
     public Party save(Party party) {
         String id = AppUtils.generateId();
         party.setPartyId(id);
+        boolean isPartyWithUserInformation = party.getUserInformation() != null;
+        if (isPartyWithUserInformation){
+            saveUserInformation(party);
+        }
         partyList.add(party);
         return party;
     }
 
+    private void saveUserInformation(Party party) {
+        UserInformation savedUserInformation = userInformationRepository.save(party.getUserInformation());
+        String partyId = party.getPartyId();
+        String userInformationId = savedUserInformation.getId();
+        AppUtils.linkUserToUserInformation(partyId, userInformationId);
+    }
+
     @Override
     public Party findById(String id) {
+        Party foundParty = null;
         for (Party party:partyList) {
             if (party.getPartyId().equals(id)){
-                return party;
+                foundParty =  party;
             }
         }
-        return null;
+        if (foundParty != null){
+            String userInformation = AppUtils.getUserInformationId(foundParty.getPartyId());
+            UserInformation userInformation1 = userInformationRepository.findById(userInformation);
+            foundParty.setUserInformation(userInformation1);
+        }
+        return foundParty;
+//        return partyList.stream().filter(party -> party.getPartyId().equals(id)).fi
     }
 
     @Override
     public List<Party> findAll() {
-        return partyList;
+        List<Party> foundPoliticalParties = new ArrayList<>();
+        for (Party party: partyList) {
+            String userInformationId = AppUtils.getUserInformationId(party.getPartyId());
+            if (userInformationId != null){
+                UserInformation foundUserInformation = userInformationRepository.findById(userInformationId);
+                party.setUserInformation(foundUserInformation);
+            }
+            foundPoliticalParties.add(party);
+        }
+        return foundPoliticalParties;
     }
 
     @Override
@@ -45,62 +67,4 @@ public class BvasPartyRepository implements PartyRepository{
         Party foundParty = findById(id);
         if (foundParty != null)partyList.remove(foundParty);
     }
-
-
-//    private int idCount;
-//
-//    @Override
-//    public void save(Party party) {
-//        if (party.getUserInformation().getId() != null){
-//            update(party);
-//        }
-//        else {
-//            saveNewParty(party);
-//        }
-//    }
-//
-//    private void update(Party party) {
-//        Party savedParty = findById(party.getUserInformation().getId());
-//        int indexOfSavedParty = partyList.indexOf(savedParty);
-//        partyList.set(indexOfSavedParty, party);
-//    }
-//
-//    private void saveNewParty(Party party) {
-//        String id = generateId();
-//        party.getUserInformation().setId(id);
-//        partyList.add(party);
-//    }
-//
-//    private String generateId() {
-//        return String.valueOf(idCount += 1);
-//    }
-//
-//
-//    @Override
-//    public Party findById(String id) {
-//        for (Party party: partyList) {
-//            if (party.getUserInformation().getId().equals(id)){
-//                return party;
-//            }
-//        }
-//        return null;
-//    }
-//
-//    @Override
-//    public List<Party> findAll() {
-//        return partyList;
-//    }
-//
-//    @Override
-//    public int countAdmin() {
-//        return partyList.size();
-//    }
-//
-//
-//    @Override
-//    public void deleteById(String id) {
-//        Party foundPartyId = findById(id);
-//        partyList.remove(foundPartyId);
-//        idCount--;
-//    }
 }

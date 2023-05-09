@@ -12,9 +12,4 @@ public interface AdminRepository {
     Admin findById(String id);
     List<Admin> findAll();
     void deleteById(String id);
-//    Admin findById(String id);
-//    List<Admin> findAll();
-//    int countAdmin();
-//    void save(Admin admin);
-//    void deleteById(String id);
 }

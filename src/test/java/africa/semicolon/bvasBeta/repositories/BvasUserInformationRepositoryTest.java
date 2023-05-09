@@ -1,8 +1,6 @@
 package africa.semicolon.bvasBeta.repositories;
 
-import africa.semicolon.bvasBeta.models.Gender;
 import africa.semicolon.bvasBeta.models.UserInformation;
-import africa.semicolon.bvasBeta.models.Voter;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -11,9 +9,7 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.*;
 
 class BvasUserInformationRepositoryTest {
-
-    UserInformation userInformation = new UserInformation();
-    private final UserInformationRepository userInformationRepository = new BvasUserInformationRepository(userInformation);
+    private final UserInformationRepository userInformationRepository = new BvasUserInformationRepository();
     UserInformation savedUserInformation;
 
     @BeforeEach

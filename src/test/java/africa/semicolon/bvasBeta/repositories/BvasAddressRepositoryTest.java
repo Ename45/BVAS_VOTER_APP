@@ -1,7 +1,6 @@
 package africa.semicolon.bvasBeta.repositories;
 
 import africa.semicolon.bvasBeta.models.Address;
-import africa.semicolon.bvasBeta.models.UserInformation;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -12,8 +11,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class BvasAddressRepositoryTest {
 
     Address savedAddress;
-    UserInformation userInformation = new UserInformation();
-    private final AddressRepository addressRepository = new BvasAddressRepository(userInformation);
+    private final AddressRepository addressRepository = new BvasAddressRepository();
 
     @BeforeEach
     public void setUp(){

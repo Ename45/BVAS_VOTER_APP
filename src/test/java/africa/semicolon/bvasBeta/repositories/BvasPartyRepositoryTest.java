@@ -12,8 +12,8 @@ import static org.junit.jupiter.api.Assertions.*;
 class BvasPartyRepositoryTest {
 
     Party savedParty;
-    UserInformation userInformation = new UserInformation();
-    private final PartyRepository partyRepository = new BvasPartyRepository(userInformation);
+    private UserInformation userInformation = new UserInformation();
+    private final PartyRepository partyRepository = new BvasPartyRepository();
 
     @BeforeEach
     public void setUp(){
