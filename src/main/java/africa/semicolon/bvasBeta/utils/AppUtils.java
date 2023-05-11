@@ -1,9 +1,14 @@
 package africa.semicolon.bvasBeta.utils;
 
+import java.math.BigInteger;
 import java.util.HashMap;
 import java.util.Map;
 
 public class AppUtils {
+    public static final int ZERO = 0;
+    public static final int NINE = BigInteger.valueOf(9).intValue();
+    public static final int SIXTEEN = BigInteger.valueOf(16).intValue();
+    public static final int FIVE = BigInteger.valueOf(5).intValue();
     private static int currentId;
     private final static Map<String, String> userInformationJoinTable = new HashMap<>();
 

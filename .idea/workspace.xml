@@ -5,27 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e6058934-30da-4e03-9654-d967f2244f67" name="Changes" comment="commit">
-      <change afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/bvasBeta/dtos/requests/VoterRegistrationRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/bvasBeta/dtos/responses/VoterRegistrationResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/bvasBeta/services/BvasVoterService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/bvasBeta/services/VoterService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/africa/semicolon/bvasBeta/services/BvasVoterServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/africa/semicolon/bvasBeta/repositories/AdminRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/bvasBeta/repositories/AdminRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/africa/semicolon/bvasBeta/repositories/BvasAddressRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/bvasBeta/repositories/BvasAddressRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/africa/semicolon/bvasBeta/repositories/BvasAdminRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/bvasBeta/repositories/BvasAdminRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/africa/semicolon/bvasBeta/repositories/BvasElectionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/bvasBeta/repositories/BvasElectionRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/africa/semicolon/bvasBeta/repositories/BvasPartyRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/bvasBeta/repositories/BvasPartyRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/africa/semicolon/bvasBeta/repositories/BvasUserInformationRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/bvasBeta/repositories/BvasUserInformationRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/africa/semicolon/bvasBeta/repositories/BvasVoterRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/bvasBeta/repositories/BvasVoterRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/africa/semicolon/bvasBeta/repositories/PartyRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/bvasBeta/repositories/PartyRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/africa/semicolon/bvasBeta/repositories/VoterRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/bvasBeta/repositories/VoterRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/africa/semicolon/bvasBeta/repositories/BvasAddressRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/africa/semicolon/bvasBeta/repositories/BvasAddressRepositoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/africa/semicolon/bvasBeta/repositories/BvasAdminRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/africa/semicolon/bvasBeta/repositories/BvasAdminRepositoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/africa/semicolon/bvasBeta/repositories/BvasElectionRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/africa/semicolon/bvasBeta/repositories/BvasElectionRepositoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/africa/semicolon/bvasBeta/repositories/BvasPartyRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/africa/semicolon/bvasBeta/repositories/BvasPartyRepositoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/africa/semicolon/bvasBeta/repositories/BvasUserInformationRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/africa/semicolon/bvasBeta/repositories/BvasUserInformationRepositoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/africa/semicolon/bvasBeta/repositories/BvasVoterRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/africa/semicolon/bvasBeta/repositories/BvasVoterRepositoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/africa/semicolon/bvasBeta/services/BvasVoterService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/bvasBeta/services/BvasVoterService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/africa/semicolon/bvasBeta/utils/AppUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/bvasBeta/utils/AppUtils.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +61,20 @@
       <recent name="africa.semicolon.bvasBeta.repositories" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.BvasVoterServiceTest">
+  <component name="RunManager" selected="Application.BvasVoterService">
+    <configuration name="BvasVoterService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="africa.semicolon.bvasBeta.services.BvasVoterService" />
+      <module name="bvasBetter" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="africa.semicolon.bvasBeta.services.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="BvasAddressRepositoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="bvasBetter" />
       <extension name="coverage">
@@ -105,21 +100,6 @@
       </extension>
       <option name="PACKAGE_NAME" value="africa.semicolon.bvasBeta.repositories" />
       <option name="MAIN_CLASS_NAME" value="africa.semicolon.bvasBeta.repositories.BvasAdminRepositoryTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BvasElectionRepositoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="bvasBetter" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="africa.semicolon.bvasBeta.repositories.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="africa.semicolon.bvasBeta.repositories" />
-      <option name="MAIN_CLASS_NAME" value="africa.semicolon.bvasBeta.repositories.BvasElectionRepositoryTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -157,11 +137,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BvasVoterService" />
         <item itemvalue="JUnit.BvasVoterServiceTest" />
         <item itemvalue="JUnit.BvasAdminRepositoryTest" />
         <item itemvalue="JUnit.BvasVoterRepositoryTest" />
         <item itemvalue="JUnit.BvasAddressRepositoryTest" />
-        <item itemvalue="JUnit.BvasElectionRepositoryTest" />
       </list>
     </recent_temporary>
   </component>
@@ -175,7 +155,7 @@
       <updated>1683191576016</updated>
       <workItem from="1683191579070" duration="10974000" />
       <workItem from="1683452480411" duration="950000" />
-      <workItem from="1683516085308" duration="35550000" />
+      <workItem from="1683516085308" duration="49140000" />
     </task>
     <servers />
   </component>
