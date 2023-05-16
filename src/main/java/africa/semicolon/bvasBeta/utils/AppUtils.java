@@ -7,6 +7,7 @@ import java.util.Map;
 public class AppUtils {
     public static final int ZERO = 0;
     public static final int NINE = BigInteger.valueOf(9).intValue();
+    public static final int ONE = BigInteger.valueOf(1).intValue();
     public static final int SIXTEEN = BigInteger.valueOf(16).intValue();
     public static final int FIVE = BigInteger.valueOf(5).intValue();
     private static int currentId;

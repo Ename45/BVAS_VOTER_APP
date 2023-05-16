@@ -13,6 +13,7 @@ import java.util.List;
 
 public class Election {
     private String electionId;
-    private LocalDate electionDate;
+    private LocalDate date;
+    private Category category;
     private List<Party> parties;
 }

@@ -9,6 +9,8 @@ import java.util.List;
 public interface PartyRepository {
     Party save(Party party);
     Party findById(String id);
+    Party findByName(String name);
     List<Party> findAll();
     void deleteById(String id);
+
 }

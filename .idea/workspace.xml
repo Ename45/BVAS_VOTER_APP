@@ -5,9 +5,36 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e6058934-30da-4e03-9654-d967f2244f67" name="Changes" comment="commit">
+      <change afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/bvasBeta/dtos/requests/AdminRegistrationRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/bvasBeta/dtos/requests/CreateElectionRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/bvasBeta/dtos/requests/PartyRegistrationRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/bvasBeta/dtos/responses/AdminRegistrationResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/bvasBeta/dtos/responses/CreateElectionResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/bvasBeta/dtos/responses/DeleteAdminResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/bvasBeta/dtos/responses/DeletePartyResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/bvasBeta/dtos/responses/DeleteVoterResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/bvasBeta/dtos/responses/PartyRegistrationResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/bvasBeta/exceptions/RegistrationException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/bvasBeta/mappers/ModelMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/bvasBeta/models/Category.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/bvasBeta/services/AdminService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/bvasBeta/services/BvasAdminService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/bvasBeta/services/BvasElectionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/bvasBeta/services/BvasPartyService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/bvasBeta/services/ElectionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/bvasBeta/services/PartyService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/africa/semicolon/bvasBeta/services/BvasAdminServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/africa/semicolon/bvasBeta/services/BvasElectionServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/africa/semicolon/bvasBeta/services/BvasPartyServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/africa/semicolon/bvasBeta/models/Election.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/bvasBeta/models/Election.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/africa/semicolon/bvasBeta/models/Party.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/bvasBeta/models/Party.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/africa/semicolon/bvasBeta/repositories/BvasPartyRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/bvasBeta/repositories/BvasPartyRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/africa/semicolon/bvasBeta/repositories/PartyRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/bvasBeta/repositories/PartyRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/africa/semicolon/bvasBeta/services/BvasVoterService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/bvasBeta/services/BvasVoterService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/africa/semicolon/bvasBeta/services/VoterService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/bvasBeta/services/VoterService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/africa/semicolon/bvasBeta/utils/AppUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/bvasBeta/utils/AppUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/africa/semicolon/bvasBeta/services/BvasVoterServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/africa/semicolon/bvasBeta/services/BvasVoterServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,9 +88,8 @@
       <recent name="africa.semicolon.bvasBeta.repositories" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.BvasVoterService">
-    <configuration name="BvasVoterService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="africa.semicolon.bvasBeta.services.BvasVoterService" />
+  <component name="RunManager" selected="JUnit.BvasAdminServiceTest">
+    <configuration name="BvasAdminServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="bvasBetter" />
       <extension name="coverage">
         <pattern>
@@ -71,50 +97,38 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BvasAddressRepositoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="bvasBetter" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="africa.semicolon.bvasBeta.repositories.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="africa.semicolon.bvasBeta.repositories" />
-      <option name="MAIN_CLASS_NAME" value="africa.semicolon.bvasBeta.repositories.BvasAddressRepositoryTest" />
+      <option name="PACKAGE_NAME" value="africa.semicolon.bvasBeta.services" />
+      <option name="MAIN_CLASS_NAME" value="africa.semicolon.bvasBeta.services.BvasAdminServiceTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BvasAdminRepositoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BvasElectionServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="bvasBetter" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="africa.semicolon.bvasBeta.repositories.*" />
+          <option name="PATTERN" value="africa.semicolon.bvasBeta.services.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="africa.semicolon.bvasBeta.repositories" />
-      <option name="MAIN_CLASS_NAME" value="africa.semicolon.bvasBeta.repositories.BvasAdminRepositoryTest" />
+      <option name="PACKAGE_NAME" value="africa.semicolon.bvasBeta.services" />
+      <option name="MAIN_CLASS_NAME" value="africa.semicolon.bvasBeta.services.BvasElectionServiceTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BvasVoterRepositoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BvasPartyServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="bvasBetter" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="africa.semicolon.bvasBeta.repositories.*" />
+          <option name="PATTERN" value="africa.semicolon.bvasBeta.services.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="africa.semicolon.bvasBeta.repositories" />
-      <option name="MAIN_CLASS_NAME" value="africa.semicolon.bvasBeta.repositories.BvasVoterRepositoryTest" />
+      <option name="PACKAGE_NAME" value="africa.semicolon.bvasBeta.services" />
+      <option name="MAIN_CLASS_NAME" value="africa.semicolon.bvasBeta.services.BvasPartyServiceTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -135,13 +149,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="BvasVoterServiceTest.getAllVotersTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="bvasBetter" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="africa.semicolon.bvasBeta.services.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="africa.semicolon.bvasBeta.services" />
+      <option name="MAIN_CLASS_NAME" value="africa.semicolon.bvasBeta.services.BvasVoterServiceTest" />
+      <option name="METHOD_NAME" value="getAllVotersTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.BvasVoterService" />
+        <item itemvalue="JUnit.BvasAdminServiceTest" />
+        <item itemvalue="JUnit.BvasPartyServiceTest" />
+        <item itemvalue="JUnit.BvasElectionServiceTest" />
         <item itemvalue="JUnit.BvasVoterServiceTest" />
-        <item itemvalue="JUnit.BvasAdminRepositoryTest" />
-        <item itemvalue="JUnit.BvasVoterRepositoryTest" />
-        <item itemvalue="JUnit.BvasAddressRepositoryTest" />
+        <item itemvalue="JUnit.BvasVoterServiceTest.getAllVotersTest" />
       </list>
     </recent_temporary>
   </component>
@@ -155,7 +185,7 @@
       <updated>1683191576016</updated>
       <workItem from="1683191579070" duration="10974000" />
       <workItem from="1683452480411" duration="950000" />
-      <workItem from="1683516085308" duration="49140000" />
+      <workItem from="1683516085308" duration="70729000" />
     </task>
     <servers />
   </component>

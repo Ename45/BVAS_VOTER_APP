@@ -2,6 +2,7 @@ package africa.semicolon.bvasBeta.repositories;
 
 import africa.semicolon.bvasBeta.models.Party;
 import africa.semicolon.bvasBeta.models.UserInformation;
+import africa.semicolon.bvasBeta.models.Voter;
 import africa.semicolon.bvasBeta.utils.AppUtils;
 
 import java.util.ArrayList;
@@ -46,6 +47,16 @@ public class BvasPartyRepository implements PartyRepository{
         }
         return foundParty;
 //        return partyList.stream().filter(party -> party.getPartyId().equals(id)).fi
+    }
+
+    @Override
+    public Party findByName(String name) {
+            for (Party party:partyList) {
+                if (party.getPartyName().equals(name)){
+                    return party;
+                }
+            }
+            return null;
     }
 
     @Override
